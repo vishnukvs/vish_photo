@@ -16,3 +16,6 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+Route::get('/home',function(){
+	return View::make('layouts.default');
+});
