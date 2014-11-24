@@ -6,15 +6,15 @@
 	<title>My Childhood Memories</title>
 	{{ HTML::style('css/bootstrap.min.css'); }}
 	{{ HTML::style('css/styles.css'); }}
-	<body class="home">
+	<body>
 		@include('layouts.header')
 		<div class="container">
 			@yield('content')
 		</div>
-
 		@include('layouts.footer')
 		<!-- JavaScripts fires from here-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		{{ HTML::script('js/bootstrap.min.js'); }}
+		{{ HTML::script('js/custom.js'); }}
 	</body>
 	</html>

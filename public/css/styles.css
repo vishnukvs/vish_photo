@@ -1,7 +1,7 @@
 body{
 
 }
-body.home{
+.home{
 	background: #2d2b2c;
 	height: 100%;
 	width: 100%;
@@ -14,7 +14,7 @@ body.home{
 	padding: 0;
 }
 
-	.navbar-default {
+.navbar-default {
 	background-color: #597fb6;
 	border-color: #185b9e;
 }
@@ -72,4 +72,14 @@ body.home{
 		color: #ecdbff;
 		background-color: #185b9e;
 	}
+}
+.main_content{
+	width: 500px;
+}
+.main_content p{
+	line-height: 25px;
+	color: #353535;
+	font-size: 19px;
+	font-family: "Tahoma";
+	margin-bottom: 25px;
 }
