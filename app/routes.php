@@ -14,7 +14,7 @@
 // echo app('env');
 Route::get('/', function()
 {
-	return View::make('hello');
+	return Redirect::to('/home');
 });
 Route::get('/home',function()
 {
@@ -24,3 +24,18 @@ Route::get('/about',function()
 {
 	return View::make('pages.about');
 });
+Route::get('/seed',function(){
+	$user  = new User;
+
+	$user->firstname = 'vishnu';
+	$user->lastname ='kanduri';
+	$user->email = 'vishnu.kvs@gmail.com';
+	$user->password = Hash::make('computer');
+	$user->save();
+});
+Route::get('/signin',function(){
+	return View::make('users.sigin');
+});
+Route::resource('/users','UsersController');
+	//Route::post('signin','SessionsController@store');
+Route::resource('sessions','SessionsController');

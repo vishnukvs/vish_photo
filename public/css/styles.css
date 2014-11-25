@@ -74,7 +74,9 @@ body{
 	}
 }
 .main_content{
+	margin-top: 90px;
 	width: 500px;
+	margin-left:20px;
 }
 .main_content p{
 	line-height: 25px;
@@ -82,4 +84,18 @@ body{
 	font-size: 19px;
 	font-family: "Tahoma";
 	margin-bottom: 25px;
+
+}
+.hero-divider{
+	background: url(../images/hero-bg-wonderjam.jpg)  no-repeat #f8f8f8;
+	width: auto;
+	height: 600px;
+	padding-bottom: 100px;
+	position: relative;
+	margin-top: -40px;
+	background-size: cover;
+}
+.text-about{
+		line-height: 1.3em;
+	font-size: 2.8em;
 }

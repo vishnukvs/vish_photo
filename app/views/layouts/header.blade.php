@@ -9,12 +9,12 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<a class="navbar-brand" href="#">My Childhood Memories</a>
+				<a class="navbar-brand" href="/home">My Childhood Memories</a>
 			</div>
 			<div class="collapse navbar-collapse" id="bs-navbar">
 				<ul class="nav navbar-nav pull-right">
-					<li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
-					<li><a href="#">About</a></li>
+					<li><a href="/home">Home <span class="sr-only">(current)</span></a></li>
+					<li><a href="/about">About</a></li>
 					<li><a href="#">Demo</a></li>
 					<li><a href="#">Register</a></li>
 				</ul>

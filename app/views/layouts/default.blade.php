@@ -8,9 +8,9 @@
 	{{ HTML::style('css/styles.css'); }}
 	<body>
 		@include('layouts.header')
-		<div class="container">
+		
 			@yield('content')
-		</div>
+
 		@include('layouts.footer')
 		<!-- JavaScripts fires from here-->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
