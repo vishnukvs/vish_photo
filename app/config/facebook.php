@@ -8,7 +8,7 @@
 return 
 array( 
       // "base_url" the url that point to HybridAuth Endpoint (where index.php and config.php are found) 
-	"base_url" => "http://photo.app/social/auth", 
+	"base_url" => "http://m.aolmelbourne.info/fbauth/auth", 
 
 	"providers" => array ( 
             // facebook
