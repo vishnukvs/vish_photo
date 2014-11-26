@@ -11,8 +11,8 @@
 	<div class="form-group">
 		{{ Form::label('Password',null,array('class'=>'col-sm-2 control-label'))}}
 		<div class="col-md-3">
-		{{ Form::password('password',array('class'=>'form-control'))}}
-	</div>
+			{{ Form::password('password',array('class'=>'form-control'))}}
+		</div>
 	</div>
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-2 ">
@@ -21,11 +21,9 @@
 	</div>
 	{{ Form::close()}}
 </div>
-<div
-  class="fb-like"
-  data-share="true"
-  data-width="450"
-  data-show-faces="true"><a href="fbauth">Facebook login</a><br/>
-  <a href="twitterAuth" class="btn btn-lg btn-primary">Twitter login</a>
+<div class="col-sm-offset -3 col-sm-2">
+	<a href="/signup" class="btn btn-lg btn-primary">Sign up</a><br/>
+	<a href="fbauth">Facebook login</a><br/>
+	<a href="twitterAuth" class="btn btn-lg btn-primary">Twitter login</a>
 </div>
 @stop

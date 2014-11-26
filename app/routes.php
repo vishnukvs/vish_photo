@@ -36,6 +36,9 @@ Route::get('/seed',function(){
 Route::get('/signin',function(){
 	return View::make('users.sigin');
 });
+Route::get('/signup',function(){
+	return View::make('users.signup');
+});
 Route::resource('/users','UsersController');
 	//Route::post('signin','SessionsController@store');
 	//
