@@ -16,7 +16,7 @@
 					<li><a href="/home">Home <span class="sr-only">(current)</span></a></li>
 					<li><a href="/about">About</a></li>
 					<li><a href="#">Demo</a></li>
-					<li><a href="#">Register</a></li>
+					<li><a href="/signin">Register</a></li>
 				</ul>
 			</div>
 		</div>
