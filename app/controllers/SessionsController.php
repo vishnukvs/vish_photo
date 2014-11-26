@@ -89,5 +89,24 @@ class SessionsController extends \BaseController {
 		return 'sessions need to be destroyed';
 	}
 
+	public function getFacebooklogin($auth=NULL)
+	{
+		if($auth == 'auth')
+		{
+			try
+			{
+				Hybrid_Endpoint::process();
+			}
+			catch (Exception $e)
+			{
+				return Redirect::to('hello');
+			}
+		return;
+	}
+		$oauth = new Hybrid_Auth(app_path().'/config/facebook.php');
+		$provider = $oauth->authenticate('Facebook');
+		$profile = $provider->getUserProfile();
+		return var_dump($profile).'<a href="logout">Logout</a>';
+	}
 
 }
