@@ -25,6 +25,7 @@
   class="fb-like"
   data-share="true"
   data-width="450"
-  data-show-faces="true"><a href="fbauth">Facebook login</a>
+  data-show-faces="true"><a href="fbauth">Facebook login</a><br/>
+  <a href="twitterAuth" class="btn btn-lg btn-primary">Twitter login</a>
 </div>
 @stop

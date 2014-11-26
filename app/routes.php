@@ -38,6 +38,7 @@ Route::get('/signin',function(){
 });
 Route::resource('/users','UsersController');
 	//Route::post('signin','SessionsController@store');
+	//
 Route::resource('sessions','SessionsController');
 Route::get('login/fb', function() {
     $facebook = new Facebook(Config::get('facebook'));
@@ -49,6 +50,7 @@ Route::get('login/fb', function() {
 });
 
 Route::get('fbauth/{auth?}',array('as'=>'facebookAuth','uses'=>'SessionsController@getFacebooklogin'));
+Route::get('twitterAuth/{auth?}',array('as'=>'twitterAuth','uses'=>'SessionsController@getTwitterLogin'));
 
 
 

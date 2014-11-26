@@ -101,12 +101,34 @@ class SessionsController extends \BaseController {
 			{
 				return Redirect::to('hello');
 			}
-		return;
-	}
+			return;
+		}
 		$oauth = new Hybrid_Auth(app_path().'/config/facebook.php');
 		$provider = $oauth->authenticate('Facebook');
 		$profile = $provider->getUserProfile();
 		return var_dump($profile).'<a href="logout">Logout</a>';
 	}
+
+	public function getTwitterLogin($auth=NULL)
+	{
+		if($auth == 'auth')
+		{
+			try
+			{
+				Hybrid_Endpoint::process();
+			}
+			catch (Exception $e)
+			{
+				return Redirect::to('home');
+			}
+			return;
+		}
+		$oauth = new Hybrid_Auth(app_path().'/config/twitter_auth.php');
+		$provider = $oauth->authenticate('Twitter');
+		$profile = $provider->getUserProfile();
+
+		return var_dump($profile).'<a href="logout">Logout</a>';
+	}
+
 
 }

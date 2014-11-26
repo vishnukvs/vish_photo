@@ -1,10 +1,10 @@
 <?php
 return array(
-    "base_url"   => "http://photo.app/social/auth",
+    "base_url"   => "http://photo.app/twitterAuth/auth",
     "providers"  => array (
         "Facebook"   => array (
             "enabled"    => true,
-            "keys"       => array ( "id" => "1534100980180833", "secret" => "4ae0bc29a8f69ab3b66e98330f4a9d25" ),
+            "keys"       => array ( "id" => "4BrtkGMsIrqqted7rKCCmPFls", "secret" => "Tlj6fA4H5lSKjzwfekGbJ9pCrPICDBvqcupBQUvF5U6ZIoS6ou" ),
 
         ),
     ),
