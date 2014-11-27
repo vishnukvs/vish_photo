@@ -134,7 +134,7 @@ class SessionsController extends \BaseController {
 	{
 		$fauth = new Hybrid_auth(app_path().'/config/facbook.php');
 		$fauth->logoutAllProviders();
-		return View::make('signin');
+		return View::make('users.sigin');
 	}
 
 }
