@@ -17,13 +17,19 @@
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-2 ">
 			{{ Form::submit('Sign in',array('class'=>'btn btn-primary btn-lg active'))}}
+				<br>
+				<div class="col-sm-offset-6 col-sm-2">
+				<a href="/signup" class="btn btn-lg btn-primary">Sign up</a><br/>
+		</div>
 		</div>
 	</div>
 	{{ Form::close()}}
 </div>
-<div class="col-sm-offset -3 col-sm-2">
-	<a href="/signup" class="btn btn-lg btn-primary">Sign up</a><br/>
-	<a href="fbauth">Facebook login</a><br/>
-	<a href="twitterAuth" class="btn btn-lg btn-primary">Twitter login</a>
+<div class="form-group">
+<div class="col-sm-offset-3 col-sm-2">
+		<a href="fbauth" class="btn btn-lg btn-primary">Facebook login</a><br/>
+			<br />
+		<a href="twitterAuth" class="btn btn-lg btn-primary">Twitter login</a>
+	</div>
 </div>
 @stop

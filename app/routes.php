@@ -54,6 +54,7 @@ Route::get('login/fb', function() {
 
 Route::get('fbauth/{auth?}',array('as'=>'facebookAuth','uses'=>'SessionsController@getFacebooklogin'));
 Route::get('twitterAuth/{auth?}',array('as'=>'twitterAuth','uses'=>'SessionsController@getTwitterLogin'));
+Route::get('logout',array('as'=>'logout','uses'=>'SessionsController@getLogout'));
 
 
 
