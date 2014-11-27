@@ -126,8 +126,9 @@ class SessionsController extends \BaseController {
 		$oauth = new Hybrid_Auth(app_path().'/config/twitter_auth.php');
 		$provider = $oauth->authenticate('Twitter');
 		$profile = $provider->getUserProfile();
+		return $profile->firstname.'<a href="logout">Logout</a>';
 
-		return var_dump($profile).'<a href="logout">Logout</a>';
+		//return var_dump($profile).'<a href="logout">Logout</a>';
 	}
 
 	public function getLogout()
