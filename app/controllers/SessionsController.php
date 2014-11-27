@@ -129,10 +129,10 @@ class SessionsController extends \BaseController {
 
 		return var_dump($profile).'<a href="logout">Logout</a>';
 	}
-	
+
 	public function getLogout()
 	{
-		$fauth = new Hybrid_auth(app_path().'/config/facbook.php');
+		$fauth = new Hybrid_Auth(app_path().'/config/facbook.php');
 		$fauth->logoutAllProviders();
 		return View::make('users.sigin');
 	}
