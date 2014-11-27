@@ -106,7 +106,7 @@ class SessionsController extends \BaseController {
 		$oauth = new Hybrid_Auth(app_path().'/config/facebook.php');
 		$provider = $oauth->authenticate('Facebook');
 		$profile = $provider->getUserProfile();
-		return $profile->firstname.'<a href="logout">Logout</a>';
+		return $profile->email.'<a href="logout">Logout</a>';
 		//	return var_dump($profile).'<a href="logout">Logout</a>';
 	}
 
