@@ -132,9 +132,13 @@ class SessionsController extends \BaseController {
 
 	public function getLogout()
 	{
-		$fauth = new Hybrid_Auth(app_path().'/config/facbook.php');
-		$fauth->logoutAllProviders();
-		return View::make('users.sigin');
+		//$oauth = new Hybrid_Auth(app_path().'/config/facbook.php');
+		//$fauth->logoutAllProviders();
+		//Hybrid_Provider_Adapter::logout();
+		
+		Auth::logout();
+		Session::flush();
+		return Redirect::to('home');
 	}
 
 }
